@@ -1,0 +1,11 @@
+<ion-view view-title="{{pgLivros}}">
+	<ion-content>
+		<div class="list" ng-repeat="livro in livros">
+		    <a class="item item-thumbnail-left" ng-click="detalheLivro($index)">
+		      <img src="{{livro.img}}">
+		      <h2>{{livro.titulo}}</h2>
+		      <p>{{livro.autor}}</p>		      
+		    </a>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,26 @@
+<ion-view view-title="{{pgLivro}}">	
+	
+	<ion-content>
+		<div class="list card">
+			<div class="item item-avatar">
+				<img src="{{livro.autorImg}}">
+				<h2>{{livro.titulo}}</h2>
+				<p>{{livro.subtitulo}}</p>
+			</div>
+
+			<div class="item item-body">
+				<img class="full-image" src="{{livro.img}}">
+				<p>
+					{{livro.conteudo}}
+				</p>
+				<p class="subdued"><i class="icon ion-person"></i> {{livro.autor}}</p>
+				<!-- <a ng-click="cordova.InAppBrowser.open('{{livro.url}}', '_blank', 'location=yes')" class="button button-full button-positive">Veja mais no site do livro</a> -->
+			</div>
+		</div>
+	</ion-content>
+
+	<!-- <ion-content>
+		<h2>{{livro.titulo}}</h2>
+		<h3>{{livro.subtitulo}}</h3>
+	</ion-content> -->
+</ion-view>
